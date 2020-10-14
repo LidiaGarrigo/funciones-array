@@ -75,6 +75,22 @@ let wordsArr = [
   'palace'
 ];
 
+let averageWordLength = (wordsArr) => {
+let longitud = wordsArr[0];
+let palabraLarga = " ";
+
+if (wordsArr == 0){
+  palabraLarga = undefined;
+}
+for (let i=0; i < wordsArr.length; i++){
+  if (wordsArr[i].length>longitud.length) {
+    palabraLarga = wordsArr[1];
+  } 
+}
+return palabraLarga;
+}
+
+
 // Unique Arrays
 let wordsUnique = [
   'crab',
@@ -89,6 +105,12 @@ let wordsUnique = [
   'simple',
   'bring'
 ];
+
+let uniquifyArray = (wordsUnique) => {
+return wordsUnique.indexOf() === " ";
+}
+let nueva = a.filter(uniquifyArray);
+uniquifyArray(wordsUnique);
 
 // Finding Elements
 let wordsFind = [
