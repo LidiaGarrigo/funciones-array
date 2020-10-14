@@ -1,5 +1,13 @@
 // Find the maximum
-
+let number1= 2;
+let number2 = 3;
+const maxOfTwoNumbers = (number1, number2) => {
+  if (number1 > number2) {
+    return number1;
+  } else 
+  return number2;
+  
+}
 // Finding Longest Word
 let words = [
   'mystery',
@@ -11,17 +19,47 @@ let words = [
   'crackpot'
 ];
 
-    
 
+function findLongestWord (words){
+  let mayor = '';
+  if (words.length == 0) {
+    mayor = undefined;
+  } 
+  for (let i = 0 ; i < words.length; i++) {
+    if (words[i].length > mayor.length) {
+    mayor = words[i];
+    }
+  }
+  return mayor;
 
-console.log(findLongestWord(words));
+}
 // Calculating a Sum
 
 let numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-// Calculate the Average
 
+let sumArray = (numbers) => {
+let suma = 0;
+for (let i = 0; i < numbers.length; i++) {
+  suma += numbers[i];
+}
+return suma;
+}
+
+// Calculate the Average  
 let numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
+
+let averageNumbers = (numbersAvg) => {
+let suma = 0;
+if (numbersAvg.length === 0){
+  return undefined;
+}
+
+for (let i = 0; i < numbersAvg.length; i++) {
+  suma += numbersAvg[i];
+}
+return (suma/numbersAvg.length);
+}
 
 // Array of Strings
 let wordsArr = [
