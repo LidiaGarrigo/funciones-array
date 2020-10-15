@@ -106,11 +106,13 @@ let wordsUnique = [
   'bring'
 ];
 
-let uniquifyArray = (wordsUnique) => {
+/* let uniquifyArray = (wordsUnique) => {
 return wordsUnique.indexOf() === " ";
 }
 let nueva = a.filter(uniquifyArray);
-uniquifyArray(wordsUnique);
+uniquifyArray(wordsUnique); */
+
+wordsUnique.filter((e) => e.length === );
 
 // Finding Elements
 let wordsFind = [
