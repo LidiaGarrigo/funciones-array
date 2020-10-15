@@ -1,13 +1,15 @@
 // Find the maximum
-let number1= 2;
-let number2 = 3;
 const maxOfTwoNumbers = (number1, number2) => {
   if (number1 > number2) {
     return number1;
-  } else 
-  return number2;
-  
+  } else {
+    return number2;
+  }
 }
+
+// QUE TAMBIÉN PUEDE RESOLVERSE:
+//    Const maxOfTwoNumbers = (a,b) => Math.max(a,b);
+
 // Finding Longest Word
 let words = [
   'mystery',
@@ -18,7 +20,6 @@ let words = [
   'orchard',
   'crackpot'
 ];
-
 
 function findLongestWord (words){
   let mayor = '';
@@ -31,20 +32,33 @@ function findLongestWord (words){
     }
   }
   return mayor;
-
 }
+
+// QUE TAMBIÉN PUEDE RESOLVERSE:
+//    (también se podria hacer con forEach)
+
+//    let arrayOrdenado = array.sort((a,b)) => b.length - a.length);
+//    return arrayOrdenado [0];
+
+
 // Calculating a Sum
 
 let numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 
-let sumArray = (numbers) => {
+let sumArray = (pitufo) => { //El nombre del parametro no importa, ya entiende que se refiere al array
 let suma = 0;
-for (let i = 0; i < numbers.length; i++) {
-  suma += numbers[i];
+for (let i = 0; i < pitufo.length; i++) {
+  suma += pitufo[i];
 }
 return suma;
 }
+sumArray(numbers); //Al llamar a la función si es importante poner el nombre de la Array
+
+// QUE TAMBIÉN PUEDE RESOLVERSE:
+//    const sumArray = (array) => array.reduce((ac, e) => ac+e,0);
+//    sumArray(numbers);    --- Para llamar a la función
+
 
 // Calculate the Average  
 let numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
@@ -58,8 +72,17 @@ if (numbersAvg.length === 0){
 for (let i = 0; i < numbersAvg.length; i++) {
   suma += numbersAvg[i];
 }
-return (suma/numbersAvg.length);
+return suma/numbersAvg.length;
 }
+
+// QUE TAMBIÉN PUEDE RESOLVERSE:
+//    if (!Array.isArray(array)){
+//    return "not an array";}
+//    if (Array.length === 0)
+//    return undefinded;
+
+// const sumArray = (array) => array.reduce((ac, e) => ac+e, 0);
+
 
 // Array of Strings
 let wordsArr = [
@@ -106,13 +129,14 @@ let wordsUnique = [
   'bring'
 ];
 
-/* let uniquifyArray = (wordsUnique) => {
+let uniquifyArray = (wordsUnique) => {
 return wordsUnique.indexOf() === " ";
 }
 let nueva = a.filter(uniquifyArray);
-uniquifyArray(wordsUnique); */
+uniquifyArray(wordsUnique); 
 
-wordsUnique.filter((e) => e.length === );
+
+
 
 // Finding Elements
 let wordsFind = [
